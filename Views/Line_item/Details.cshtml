@@ -1,0 +1,50 @@
+﻿@model WidgetsERPSite.Models.Line_item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Line_item</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Invoice.PK_InvoiceNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Invoice.PK_InvoiceNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,42 @@
+﻿@model WidgetsERPSite.Models.Invoice
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Invoice</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InvDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InvDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InvoiceTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InvoiceTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Company)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Company)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PK_InvoiceNo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
